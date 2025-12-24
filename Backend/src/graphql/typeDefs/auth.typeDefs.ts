@@ -1,3 +1,5 @@
+// Backend/src/typeDefs/auth.typeDefs.ts
+
 import { gql } from 'graphql-tag';
 
 export const authTypeDefs = gql`

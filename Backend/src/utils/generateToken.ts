@@ -1,3 +1,5 @@
+// Backend/src/utils/generateToken.ts
+
 import jwt from 'jsonwebtoken';
 import { JWT_SECRET, JWT_EXPIRES } from '../config/jwt.js';
 

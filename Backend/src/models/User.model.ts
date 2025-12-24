@@ -1,3 +1,5 @@
+// Backend/src/models/User.model.ts
+
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({

@@ -1,3 +1,5 @@
+// Backend/src/resolvers/auth.resolver.ts
+
 import bcrypt from "bcryptjs";
 import { GraphQLError } from "graphql";
 import User from "../../models/User.model.js";
@@ -6,7 +8,6 @@ import { requireRole } from "../../middleware/role.middleware.js";
 
 export const authResolvers = {
     Query: {
-        // 🔐 Authenticated user only
         me: (_: any, __: any, context: any) => {
             if (!context?.user) {
                 throw new GraphQLError("Not authenticated", {
@@ -78,7 +79,7 @@ export const authResolvers = {
             };
         },
 
-        // // 🔐 ADMIN-ONLY (example)
+        // 🔐 ADMIN-ONLY (example)
         // createSeller: requireRole(["ADMIN"])(async (_: any, args: any) => {
         //     const hashedPassword = await bcrypt.hash(args.password, 10);
 

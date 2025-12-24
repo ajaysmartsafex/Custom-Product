@@ -1,3 +1,5 @@
+// Backend/src/middleware/role.middleware.ts
+
 import { GraphQLError } from "graphql";
 
 export const requireRole = (allowedRoles: string[]) => {

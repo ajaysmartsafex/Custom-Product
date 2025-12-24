@@ -1,3 +1,5 @@
+// Backend/src/middleware/auth.middleware.ts
+
 import jwt from "jsonwebtoken";
 import { JWT_SECRET } from "../config/jwt.js";
 import User from "../models/User.model.js";
