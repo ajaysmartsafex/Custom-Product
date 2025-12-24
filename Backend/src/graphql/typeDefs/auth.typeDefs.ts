@@ -1,0 +1,33 @@
+import { gql } from 'graphql-tag';
+
+export const authTypeDefs = gql`
+  type User {
+    id: ID!
+    name: String
+    email: String
+    role: String
+  }
+
+  type AuthResponse {
+    token: String!
+    user: User!
+  }
+
+  type Query {
+    me: User
+  }
+
+  type Mutation {
+    register(
+      name: String!
+      email: String!
+      password: String!
+      role: String
+    ): AuthResponse
+
+    login(
+      email: String!
+      password: String!
+    ): AuthResponse
+  }
+`;
