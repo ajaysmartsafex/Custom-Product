@@ -10,3 +10,27 @@ export const LOGIN_MUTATION = gql`
     }
   }
 `;
+
+export const REGISTER_MUTATION = gql`
+  mutation Register(
+    $name: String!
+    $email: String!
+    $password: String!
+    $role: String
+  ) {
+    register(
+      name: $name
+      email: $email
+      password: $password
+      role: $role
+    ) {
+      token
+      user {
+        id
+        name
+        email
+        role
+      }
+    }
+  }
+`;
