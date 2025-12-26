@@ -1,5 +1,6 @@
 # dependencies
 node_modules/
+app-structure-proposal/
 
 # env files
 .env
@@ -7,3 +8,4 @@ node_modules/
 # logs
 npm-debug.log*
 yarn-debug.log*
+
