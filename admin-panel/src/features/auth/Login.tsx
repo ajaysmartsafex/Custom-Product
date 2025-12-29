@@ -1,3 +1,5 @@
+// admin-panel/src/features/auth/Login.tsx
+
 import { useState } from "react";
 import { useLoginMutation } from "../../generated/graphql";
 import { useDispatch } from "react-redux";

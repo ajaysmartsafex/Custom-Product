@@ -1,3 +1,5 @@
+// admin-panel/src/routes/AppRoutes.tsx
+
 import { Routes, Route } from "react-router-dom";
 import Login from "../features/auth/Login";
 import Dashboard from "../pages/Dashboard";

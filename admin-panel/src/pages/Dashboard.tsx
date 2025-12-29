@@ -1,3 +1,5 @@
+// admin-panel/src/pages/Dashboarde.tsx
+
 const Dashboard = () => {
     const stats = [
         { label: "Total Products", value: 120 },

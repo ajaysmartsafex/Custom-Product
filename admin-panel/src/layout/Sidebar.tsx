@@ -1,3 +1,5 @@
+// admin-panel/src/layout/Sidebar.tsx
+
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../features/auth/authSlice";

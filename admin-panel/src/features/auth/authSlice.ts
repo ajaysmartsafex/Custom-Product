@@ -1,3 +1,5 @@
+// admin-panel/src/features/auth/authSlice.ts
+
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 // import type { PayloadAction } from "@reduxjs/toolkit";
 
