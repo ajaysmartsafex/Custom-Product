@@ -1,7 +1,6 @@
 // admin-panel/src/features/auth/authSlice.ts
 
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-// import type { PayloadAction } from "@reduxjs/toolkit";
 
 interface AuthState {
     token: string | null;
@@ -26,7 +25,8 @@ const authSlice = createSlice({
         logout(state) {
             state.token = null;
             state.role = null;
-            localStorage.clear();
+            localStorage.removeItem("token");
+            localStorage.removeItem("role");
         },
     },
 });

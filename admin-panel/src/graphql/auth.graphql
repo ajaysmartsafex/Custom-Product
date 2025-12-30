@@ -2,7 +2,7 @@ mutation Login($email: String!, $password: String!) {
   login(email: $email, password: $password) {
     token
     user {
-      _id
+      id
       name
       email
       role
@@ -24,7 +24,7 @@ mutation Register(
   ) {
     token
     user {
-      _id
+      id
       name
       email
       role
